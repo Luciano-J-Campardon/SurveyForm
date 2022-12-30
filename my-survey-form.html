@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="author" content="Luciano Campardón">
+    <meta name="description" content="This survey form is my fist project to learn web development">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="my-styles.css">
+    <title>My Survey Form</title>
+  </head>
+  <body class="survey">
+   <div>
+    <h1 id="title">THE-MATRIX-CODE SURVEY FORM</h1>
+    <p id="description" class="text-center"><strong><em>Thanks for helping us improve our platform!</em></strong></p>
+    <fieldset>
+     <form id="survey-form">
+      <div id="survey-component" class="survey-main">
+       <label class="block" id="name-label"><strong>Please enter your name:</strong>
+         <input 
+          type="text" 
+          name="name-label"
+          placeholder="Name"
+          required
+          class="user-data"
+          id="name">
+       </label>
+      </div>
+      <div id="survey-component" class="survey-main">
+        <label class="block" id="email-label"><strong>Please enter your email:</strong>
+          <input 
+           type="email" 
+           name="email-label"
+           placeholder="Email"
+           required
+           class="user-data"
+           id="email">
+        </label>
+      </div>
+      <div id="survey-component" class="survey-main">
+        <label class="block" id="number-label"><strong>Please enter your age (optional):</strong>
+          <input 
+           type="number" 
+           name="number-label"
+           placeholder="Age"
+           min="13"
+           max="99"
+           class="user-data"
+           pattern="[13-99]{2,}" 
+           id="number">
+        </label>
+      </div>
+      <div id="survey-component" class="survey-main">
+        <p><strong>What do you like the most about our page?</strong></p>
+        <select id="dropdown" class="survey-select">
+         <option disabled selected value>Please choose an option</option>
+         <option>The challenges?</option>
+         <option>The projects?</option>
+         <option>Our community?</option>
+         <option>THe fact that we're open source?</option> 
+        </select>
+      </div>
+      <div id="survey-component" class="survey-main">
+       <p><strong>Would you recommend our page to a friend?</strong></p> 
+       <label class="radio-input">
+         <input 
+         type="radio" 
+         name="recommend"
+         value="Absolutely"
+         id="Absolutely"
+         class="radio-button"><em>Absolutely</em>
+       </label>
+       <label class="radio-input">
+         <input 
+         type="radio" 
+         name="recommend"
+         value="Maybe"
+         class="radio-button"><em>Maybe</em>
+       </label>
+       <label class="radio-input">
+         <input 
+         type="radio" 
+         name="recommend"
+         value="No"
+         class="radio-button"><em>No, i wouldn't</em>
+       </label>  
+      </div>
+      <div>
+        <p class="survey-main"><strong>In which of the following you'd like to see improvement?</strong></p>
+        <label class="checkbox">
+          <input 
+           type="checkbox" 
+           name="improvement"
+           value="Front-end"
+           class="input-mod"
+           >The Front-end Projects
+        </label>
+        <label class="checkbox">
+          <input 
+           type="checkbox" 
+           name="improvement"
+           value="Back-end"
+           class="input-mod">The Back-end Projects
+        </label>
+        <label class="checkbox">
+          <input 
+           type="checkbox" 
+           name="improvement"
+           value="Data-visualization"
+           class="input-mod">Data visualization
+        </label>
+        <label class="checkbox">
+          <input 
+           type="checkbox" 
+           name="improvement"
+           value="Challenges"
+           class="input-mod">The Challenges
+        </label>
+        <label class="checkbox">
+          <input 
+           type="checkbox" 
+           name="improvement"
+           value="Community"
+           class="input-mod">The Open-Source Community
+        </label>
+        <label class="checkbox">
+          <input 
+           type="checkbox" 
+           name="improvement"
+           value="Wiki"
+           class="input-mod">The Wiki
+        </label>
+        <label class="checkbox">
+          <input 
+           type="checkbox" 
+           name="improvement"
+           value="Forum"
+           class="input-mod">The Forum
+        </label>
+        <label class="checkbox">
+          <input 
+           type="checkbox" 
+           name="improvement"
+           value="Courses"
+           class="input-mod">Additional Courses
+        </label>
+        <label class="checkbox">
+          <input 
+           type="checkbox" 
+           name="improvement"
+           value="Other"
+           class="input-mod">Other Resources
+        </label>
+      </div>
+      <div class="survey-main">
+        <p><strong>Do you have any suggestions to make our page better?</strong></p>
+        <textarea rows="10" cols="70" placeholder="Please share your ideas with us!"></textarea>
+      </div>
+      <br>
+      <div class="survey-main">
+       <input 
+        type="submit" 
+        name="submit"
+        value="SUBMIT"
+        id="submit"
+        class="submit-button">       
+      </div>
+     </form>
+    </fieldset>
+   </div> 
+  </body>
+</html>
